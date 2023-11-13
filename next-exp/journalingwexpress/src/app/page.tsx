@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/v1/users");
+        const res = await fetch("http://localhost:5000/api/log");
         const responseData = await res.json();
         setData(responseData.users);
       } catch (err) {
