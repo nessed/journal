@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const EntryBar = () => {
     const [inputValue, setInputValue] = useState('');
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e:any) => {
         setInputValue(e.target.value);
     };
 
